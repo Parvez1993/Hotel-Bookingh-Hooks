@@ -1,0 +1,89 @@
+@import url("https://fonts.googleapis.com/css2?family=Domine:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Domine:wght@700&family=Inter&display=swap");
+
+:root {
+  /* web color */
+  --blue: #4531b1;
+  --purple: #a836ad;
+  --pink: #cc1b5f;
+  --yellow: #d1db70;
+  --black: #2e2b2e;
+  --white: #fefefe;
+
+  /*width*/
+  --width: 1320px;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Domine", serif;
+}
+
+.underline {
+  border-bottom: 2px solid black;
+  border-width: 3px;
+  height: 50px;
+}
+a {
+  text-decoration: none;
+  color: var(--white);
+}
+
+a:hover {
+  border-bottom: 2px solid var(--white);
+}
+li {
+  list-style: none;
+}
+
+.container {
+  max-width: var(--width);
+  margin: 0 auto;
+}
+
+/* hero */
+
+.defaultHero {
+  background: url("./image/hero/default.jpg");
+  height: 80vh;
+  background-size: cover;
+  background-position: center center;
+  filter: brightness(70%);
+}
+
+/* button */
+.btn-primary {
+  border: 1px solid var(--white);
+  padding: 10px;
+}
+
+.btn-primary:hover {
+  background: var(--pink);
+}
+
+/* //heading */
+
+.heading {
+  display: flex;
+  justify-content: center;
+  margin: 100px 0;
+}
+
+.btn-secondary {
+  border: 1px solid var(--white);
+  padding: 10px;
+  background: var(--pink);
+}

@@ -1,0 +1,111 @@
+     
+     
+     
+     
+     
+     
+     capacity
+     
+     
+     {/* 
+        <div className="form-group">
+          <label htmlFor="capacity">Guests</label>
+          <select
+            name="capacity"
+            id="capacity"
+            onChange={handleChange}
+            className="form-control"
+            value={capacity}
+          >
+            {people.map((item, index) => {
+              return <option key={index}>{item}</option>;
+            })}
+          </select>
+        </div> */}
+
+
+
+
+
+         <input
+            type="range"
+            name="price"
+            min={minPrice}
+            max={maxPrice}
+            id="price"
+            value={price}
+            onChange={handleChange}
+            className="form-control"
+          />
+
+
+
+         <input
+              type="number"
+              name="minSize"
+              value={minSize}
+              onChange={handleMinSize}
+              className="size-input"
+            />
+            <input
+              type="number"
+              name="maxSize"
+              value={maxSize}
+              onChange={handleMaxSize}
+              className="size-input"
+            />
+
+
+
+
+
+
+
+
+
+
+              <div className="form-group">
+          <label htmlFor="size">room size</label>
+          <div className="size-inputs">
+            <TextField
+              type="number"
+              name="minSize"
+              value={minSize}
+              onChange={handleMinSize}
+              className="size-input"
+              InputLabelProps={{
+                shrink: true,
+              }}
+            />
+            <TextField
+              type="number"
+              name="maxSize"
+              value={maxSize}
+              onChange={handleMinSize}
+              className="size-input"
+              InputLabelProps={{
+                shrink: true,
+              }}
+            />
+          </div>
+        </div>
+
+
+        pets
+            <input
+              type="checkbox"
+              name="pet"
+              id="pet"
+              checked={pet}
+              onChange={handleChange}
+            />
+
+breakfast
+               <input
+              type="checkbox"
+              name="breakfast"
+              id="breakfast"
+              checked={breakfast}
+              onChange={handleChange}
+            />
+            <label htmlFor="breakfast">Breakfast</label>
